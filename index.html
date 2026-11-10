@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#10264b">
+<title>Larkfield Court School | Motion edition</title>
+<meta name="description" content="Demo: a scroll-driven, animated school website concept by Studio8six.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="crest" viewBox="0 0 64 72">
+    <path d="M32 3 6 11v24c0 17 11 28 26 34 15-6 26-17 26-34V11L32 3Z" fill="#10264b" stroke="#c9a24b" stroke-width="3"/>
+    <path d="M32 11v50M12 28h40" stroke="#c9a24b" stroke-width="1.5" opacity=".6"/>
+    <text x="32" y="46" text-anchor="middle" font-family="Georgia,serif" font-size="26" font-weight="700" fill="#c9a24b">L</text>
+    <path d="M25 18c3-5 11-5 14 0" stroke="#c9a24b" stroke-width="2" fill="none"/>
+  </symbol>
+</svg>
+
+<div id="pre" role="status" aria-label="Loading">
+  <div class="pin">
+    <svg aria-hidden="true"><use href="#crest"/></svg>
+    <div id="pcount">0%</div>
+    <div class="track"><span id="pfill"></span></div>
+  </div>
+</div>
+<div id="bar"></div>
+
+<div class="demo">Demo concept by <a href="https://studio8six.com/schools">Studio8six</a>. Larkfield Court School is fictional. African-themed photos from Pexels (free licence).</div>
+
+<a class="logo" href="#top" aria-label="Larkfield Court School, top of page"><svg aria-hidden="true"><use href="#crest"/></svg>Larkfield Court</a>
+<button class="mbtn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span></button>
+
+<nav id="menu" aria-label="Site menu" inert>
+  <svg class="crest-wm" aria-hidden="true"><use href="#crest"/></svg>
+  <div class="wrap">
+    <ul>
+      <li class="m" style="--i:0"><a href="#about"><span>01</span>About us</a></li>
+      <li class="m" style="--i:1"><a href="#values"><span>02</span>Our values</a></li>
+      <li class="m" style="--i:2"><a href="#wall"><span>03</span>Life at Larkfield</a></li>
+      <li class="m" style="--i:3"><a href="#campus"><span>04</span>Campus</a></li>
+      <li class="m" style="--i:4"><a href="#stages"><span>05</span>Find your stage</a></li>
+      <li class="m" style="--i:5"><a href="#visit"><span>06</span>Book a visit</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="top">
+  <!-- HERO SCENE -->
+  <section class="hero" aria-label="Welcome">
+    <div class="hero-bg"><img src="img/hero.jpg" alt="A school building with open walkways above a sunny courtyard"></div>
+    <div class="hero-shade"></div>
+    <h1 class="hero-title">
+      <span class="line"><span class="small">What makes us</span></span>
+      <span class="line"><span class="big">Larkfield</span></span>
+    </h1>
+    <a class="ftile t1" href="#wall"><img src="img/teacher.jpg" alt="A teacher with her hand raised in a lively classroom"><div class="cap"><span class="chip">Our teachers</span><br>Know every child by name</div></a>
+    <a class="ftile t2" href="#campus"><img src="img/lab.jpg" alt="A young woman pouring liquid during a science experiment in a laboratory"><div class="cap"><span class="chip g">Science</span><br>Inside our laboratories</div></a>
+    <a class="ftile t3" href="#stages"><img src="img/early.jpg" alt="Young children in a bright classroom with colourful learning posters"><div class="cap"><span class="chip l">Early Years</span><br>A gentle, joyful start</div></a>
+    <a class="ftile t4" href="#wall"><img src="img/sports.jpg" alt="Teenagers playing football in a school courtyard"><div class="cap"><span class="chip">Sport</span><br>Sport for everyone</div></a>
+    <a class="ftile t5" href="#stages"><img src="img/grads.jpg" alt="Students in school uniform smiling together outdoors"><div class="cap"><span class="chip s">Results</span><br>Our Year 11 leavers</div></a>
+    <a class="ftile t6" href="#visit"><img src="img/building.jpg" alt="A colourful school building with open balconies"><div class="cap"><span class="chip g">Visit</span><br>Take a campus tour</div></a>
+    <div class="hero-cue" aria-hidden="true">Scroll<i></i></div>
+    <div class="pillars">
+      <div><b>Curiosity</b><span>Questions are welcome in every lesson.</span></div>
+      <div><b>Care</b><span>Every child known, every child valued.</span></div>
+      <div><b>Courage</b><span>Trying hard things, and trying again.</span></div>
+      <div><b>Character</b><span>Honesty, respect and service.</span></div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-label="Key facts">
+    <div class="ticker-track" aria-hidden="true">
+      <div class="ticker-set"><span>18 pupils per class</span><span>94% IGCSE grades 9–4</span><span>17 years in Lekki</span><span>600 pupils, ages 2–16</span><span>12 IGCSE subjects</span><span>1:9 teacher to pupil ratio</span></div>
+      <div class="ticker-set"><span>18 pupils per class</span><span>94% IGCSE grades 9–4</span><span>17 years in Lekki</span><span>600 pupils, ages 2–16</span><span>12 IGCSE subjects</span><span>1:9 teacher to pupil ratio</span></div>
+    </div>
+    <p class="sr">18 pupils per class, 94 percent of IGCSE entries graded 9 to 4, 17 years in Lekki, 600 pupils aged 2 to 16. Demo figures.</p>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <span class="eyebrow">About us</span>
+      <div class="arrow" aria-hidden="true"></div>
+      <p class="big" data-words>At Larkfield Court we build the foundation for a lifetime of learning: a British curriculum, small classes and teachers who treat every child as an individual, from their first day in Nursery to their last IGCSE exam.</p>
+      <a class="btn mag" href="#visit">Book a school visit</a>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="values" id="values">
+    <svg class="crest-wm" aria-hidden="true"><use href="#crest"/></svg>
+    <div class="wrap">
+      <p class="q"><span class="mark" aria-hidden="true">“</span>We help every child grow in <span class="u u1" data-u>Curiosity</span>, <span class="u u2" data-u>Care</span> and <span class="u u3" data-u>Courage</span>, so they leave us ready for whatever comes next.</p>
+    </div>
+  </section>
+
+  <!-- TILE WALL -->
+  <section class="wall" id="wall">
+    <div class="wrap">
+      <h2>Life at Larkfield</h2>
+      <div class="grid">
+        <button class="t ph w2 r2" data-light="img/teacher.jpg" data-cap="A teacher with her hand raised in a lively classroom"><img src="img/teacher.jpg" alt="" loading="lazy"><span class="play" aria-hidden="true"></span><span class="in"><span class="chip">Our teachers</span><span class="ph-t" style="display:block">Meet the teachers who know every child by name</span></span></button>
+        <div class="t q bg-lime r2"><div class="in"><span class="qm">“</span><blockquote>I came in shy. By Year 6 I was captaining the debate team.</blockquote><cite>Chidi, Year 7 pupil (demo quote)</cite></div></div>
+        <div class="t n bg-sky"><b data-count="14">0</b><span>nationalities in our community</span></div>
+        <button class="t ph" data-light="img/lab.jpg" data-cap="A young woman pouring liquid during a science experiment"><img src="img/lab.jpg" alt="" loading="lazy"><span class="in"><span class="chip g">Science</span><span class="ph-t" style="display:block">Inside our labs</span></span></button>
+        <div class="t q bg-coral w2"><div class="in"><span class="qm">“</span><blockquote>The office answers every question fast, and the fees were explained clearly from the first visit.</blockquote><cite>Amina, parent of a Reception pupil (demo quote)</cite></div></div>
+        <button class="t ph r2" data-light="img/primary.jpg" data-cap="Children in school uniform sitting at wooden desks"><img src="img/primary.jpg" alt="" loading="lazy"><span class="in"><span class="chip l">Primary</span><span class="ph-t" style="display:block">Strong reading, maths and curiosity</span></span></button>
+        <div class="t n bg-cream" style="color:var(--navy-d)"><b data-count="94" data-suffix="%">0</b><span>IGCSE entries graded 9–4 (demo figure)</span></div>
+        <button class="t ph w2" data-light="img/assembly.jpg" data-cap="Pupils in blue uniform standing together outdoors"><img src="img/assembly.jpg" alt="" loading="lazy"><span class="play" aria-hidden="true"></span><span class="in"><span class="chip">Assembly</span><span class="ph-t" style="display:block">One school, one community</span></span></button>
+        <div class="t q bg-mag"><div class="in"><span class="qm">“</span><blockquote>Teachers here know my daughter as a person, not a number.</blockquote><cite>Ngozi, parent of a Year 5 pupil (demo quote)</cite></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAROUSEL -->
+  <section class="rail-sec" id="campus" aria-label="Campus gallery">
+    <div class="wrap rail-head">
+      <h2>A campus made for curious minds</h2>
+      <div class="ctrl"><button type="button" class="prev" aria-label="Previous photos">←</button><button type="button" class="next" aria-label="Next photos">→</button></div>
+    </div>
+    <div class="rail" tabindex="0" aria-label="Scrolling photo gallery">
+      <figure><img src="img/building.jpg" alt="Front of the main school building" loading="lazy"><figcaption>The main building</figcaption></figure>
+      <figure><img src="img/library.jpg" alt="A young girl studying at a library desk" loading="lazy"><figcaption>The library</figcaption></figure>
+      <figure><img src="img/campus.jpg" alt="School buildings around a sunlit courtyard" loading="lazy"><figcaption>Across the courtyard</figcaption></figure>
+      <figure><img src="img/classroom.jpg" alt="A teacher working with students in a classroom" loading="lazy"><figcaption>Bright classrooms</figcaption></figure>
+      <figure><img src="img/sports.jpg" alt="Teenagers playing football in a school courtyard" loading="lazy"><figcaption>The sports field</figcaption></figure>
+      <figure><img src="img/seniors.jpg" alt="A graduate smiling at a ceremony" loading="lazy"><figcaption>Leavers' day</figcaption></figure>
+    </div>
+    <div class="prog" aria-hidden="true"><i></i></div>
+  </section>
+
+  <!-- STAGES -->
+  <section class="stages" id="stages">
+    <div class="wrap">
+      <h2>Discover your place</h2>
+      <p class="sub">Choose a stage to see how learning looks at each age.</p>
+      <div class="acc">
+        <button class="panel on" type="button" aria-expanded="true"><img src="img/early.jpg" alt="" loading="lazy"><span class="in"><span class="age">Ages 2–5</span><h3>Nursery & Reception</h3><p>A calm, nurturing start with a key person for every child and an adult for every eight children.</p><span class="go">Explore Early Years →</span></span></button>
+        <button class="panel" type="button" aria-expanded="false"><img src="img/primary.jpg" alt="" loading="lazy"><span class="in"><span class="age">Ages 5–11</span><h3>Primary</h3><p>Daily reading, strong maths and specialist teaching in science, music and PE.</p><span class="go">Explore Primary →</span></span></button>
+        <button class="panel" type="button" aria-expanded="false"><img src="img/classroom.jpg" alt="" loading="lazy"><span class="in"><span class="age">Ages 11–16</span><h3>Secondary</h3><p>Subject specialists, small sets and a mentor for every student through to IGCSE.</p><span class="go">Explore Secondary →</span></span></button>
+        <button class="panel" type="button" aria-expanded="false"><img src="img/grads.jpg" alt="" loading="lazy"><span class="in"><span class="age">After Year 11</span><h3>Leavers</h3><p>Careers guidance from Year 9 and places at universities in Nigeria, the UK, Canada and the US.</p><span class="go">See destinations →</span></span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="visit">
+    <div class="wrap">
+      <span class="eyebrow">Book a school visit</span>
+      <h2 style="margin-top:14px"><span class="line"><span data-rise>Come and</span></span><span class="line"><span data-rise>see us.</span></span></h2>
+      <div class="actions">
+        <a class="btn mag" href="https://wa.me/2348005550142?text=Hello%2C%20I'd%20like%20to%20book%20a%20school%20visit.">WhatsApp admissions</a>
+        <a class="btn o mag" href="tel:+2348005550142">Call +234 800 555 0142</a>
+      </div>
+      <p style="margin-top:28px;color:#475467;font-size:.9rem">Demo: fictional school and phone number. Our admissions team would call you within 1 working day.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Larkfield Court School is a fictional demo by <a href="https://studio8six.com/schools">Studio8six</a>. Photos from <a href="https://www.pexels.com">Pexels</a> under the Pexels licence. Not indexed by search engines.</div>
+</footer>
+
+<dialog class="lb" id="lb" aria-label="Photo viewer"><button type="button" id="lbx">Close</button><img alt=""><p></p></dialog>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
